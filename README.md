@@ -1,10 +1,10 @@
 ## 简介
-webman-hash 是基于 Laravel Hashing 提供的 Bcrypt 和 Argon2 哈希加密方式。 默认情况下，将使用 Bcrypt 进行注册和身份验证。
+webman-hash 哈希加密为存储用户密码提供了安全的 Bcrypt 和 Argon2 哈希加密方式。 默认情况下，将使用 Bcrypt 进行注册和身份验证。
 Bcrypt 是加密密码的一个很好的选择，因为它的「加密系数」是可调的，这意味着生成散列所需的时间可以随着硬件功率的增加而增加。当加密密码时速度慢是相对比较好的。算法对密码进行哈希运算的时间越长，恶意用户生成所有可能用于对应用程序进行暴力攻击的字符串哈希值的「彩虹表」的时间就越长。
 ## 配置
 你可以在 config/plugin/yzh52521/hashing/app.php 配置文件中配置默认哈希驱动程序。目前支持三种驱动程序： [Bcrypt](https://en.wikipedia.org/wiki/Bcrypt) 和 [Argon2](https://en.wikipedia.org/wiki/Argon2) (Argon2i and Argon2id variants)。
 
->注意：Argon2i 驱动程序需要 PHP 7.2.0 或更高版本，而 Argon2id 驱动程序则需要 PHP 7.3.0 或更高版本。
+> 注意：Argon2i 驱动程序需要 PHP 7.2.0 或更高版本，而 Argon2id 驱动程序则需要 PHP 7.3.0 或更高版本。
 
 ## 基本用法
 ### 哈希密码
