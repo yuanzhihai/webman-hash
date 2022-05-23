@@ -1,0 +1,24 @@
+{
+  "name": "yzh52521/webman-hash",
+  "description": "Use hash  in webman Framework, The Laravel Hash component implements library.",
+  "type": "library",
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "yzh52521",
+      "email": "396751927@qq.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.4",
+    "illuminate/hashing": "^8.0|^9.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "yzh52521\\hash\\": "src/"
+    }
+  },
+  "require-dev": {
+    "workerman/webman": "^1.0"
+  }
+}
