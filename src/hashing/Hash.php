@@ -18,16 +18,16 @@ class Hash implements Hasher
      *
      * @var array
      */
-    protected array $drivers = [];
+    protected $drivers = [];
 
     /**
      * The registered custom driver creators.
      *
      * @var array
      */
-    protected array $customCreators = [];
+    protected $customCreators = [];
 
-    protected string $container;
+    protected $container;
 
     public function __construct()
     {
